@@ -26,6 +26,6 @@ else {
     echo "El método no es POST <br>";
 }
 
-include('list.html');
+include 'list.php';
 ?>
 
