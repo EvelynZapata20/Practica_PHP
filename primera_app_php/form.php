@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 else {
-    echo "No se ha enviado un POST<br>";
+    echo "El método no es POST <br>";
 }
 
 include('list.html');

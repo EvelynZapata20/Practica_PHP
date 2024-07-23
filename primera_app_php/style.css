@@ -3,7 +3,7 @@ html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background-color: #4c0082e8;
+    background: linear-gradient(to right, #daaffe, #fec4ed);
     height: 100%;
     margin: 0;
 }
@@ -15,17 +15,103 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #212529;
-    align-items: center;
-    background-color: #4c0082e8;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.content-container {
+    text-align: center;
+    gap: 20px;
+    width: 600px;
+    max-height: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.content-container h1 {
+    margin: 0  0 10px 0;
+}	
+
 .form-container {
-    width: 70%;
-    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container img {
+    max-width: 55%;
+    height: auto;
+    border-radius: 10px;
+}
+.text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    border: 5px solid white;
+    text-align: center;
+    margin: 20px;
+}
+.text-container h2 {
+    margin-bottom: 10px;
+}
+
+.text-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.text-container input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+}
+.text-container .button {
+    padding: 10px 20px;
+    width: 50%;
+    align-self: center;
+    background: linear-gradient(to right, #ad74db, #c44fa1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.text-container .button:hover {
+    background: linear-gradient(to right, #daaffe, #fec4ed);
+}
+
+table {
+    width: 100%;
+    max-width: 600px;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+thead {
+    background: linear-gradient(to right, #ad74db, #c44fa1);
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
 }
